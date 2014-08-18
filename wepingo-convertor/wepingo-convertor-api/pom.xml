@@ -7,4 +7,11 @@
   </parent>
   <artifactId>wepingo-convertor-api</artifactId>
   <packaging>war</packaging>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.wepingo.convertor</groupId>
+  		<artifactId>wepingo-convertor-service</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
