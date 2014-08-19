@@ -14,11 +14,26 @@ public class RuleEngineManager {
 	public RuleEngineManager() {
 	}
 	public boolean FireUserAction(UserActionRulable userActionRulable){
+		// 1) Computing relative user action value 
+		UserActionStatisticScope relativeScope;
+		Double relativeValue = this.computeUserActionRelativeValue(userActionRulable);
+		
+		// 2) Ask for all Business states
+		// 3) 
+		
+		
+		
 		return false;
 	}
+	private Double computeUserActionRelativeValue(
+			UserActionRulable userActionRulable) {
+		
+		
+		return .0;
+	}
+
 	public List<BusinessActionRulable> getComputedBusinessActions(){
 		return null;
 	}
-	
 	
 }

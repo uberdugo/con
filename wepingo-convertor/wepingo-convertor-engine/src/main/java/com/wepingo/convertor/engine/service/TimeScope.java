@@ -4,6 +4,5 @@ public enum TimeScope {
 	SESSION,
 	DAY,
 	THREE_DAY,
-	ONE_WEEK,
 	MORE_THAN_ONE_WEEK;
 }

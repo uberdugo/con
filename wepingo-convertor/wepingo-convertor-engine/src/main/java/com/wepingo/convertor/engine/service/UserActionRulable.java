@@ -4,6 +4,11 @@ import java.util.List;
 
 public interface UserActionRulable {
 	public UserRulable getUser();
-	public String getName();
+	public String getLabel();
+	public Double getAbsoluteValue();
+
+	
 	public List <UserActionStatisticRulable> getUserActionStatistics();
+	public boolean isStatisticAvailable(UserActionStatisticScope userActionStatisticScope);
+	public UserActionStatisticRulable getUserActionStatisticRulable(UserActionStatisticScope userActionStatisticScope);
 }
