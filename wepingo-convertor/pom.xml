@@ -43,6 +43,14 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<repositories>
+	<repository>
+			<id>wepingo</id>
+			<url>http://repo.wepingo.dyndns.biz/repository</url>
+			<snapshots>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+		</repository>
 		<repository>
 			<id>spring-snapshots</id>
 			<url>http://repo.spring.io/snapshot</url>

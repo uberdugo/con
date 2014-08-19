@@ -12,5 +12,10 @@
   		<artifactId>wepingo-convertor-util</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	<dependency>
+  		<groupId>jfl</groupId>
+  		<artifactId>jfl</artifactId>
+  		<version>0.1</version>
+  	</dependency>
   </dependencies>
 </project>
