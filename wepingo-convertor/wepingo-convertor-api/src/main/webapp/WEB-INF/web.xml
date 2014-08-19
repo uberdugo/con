@@ -5,13 +5,12 @@
 	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
 	metadata-complete="true">
 
-	<display-name>Wepingo-API</display-name>
-	<description>Wepingo-API</description>
+	<display-name>wepingo-convertor-api</display-name>
+	<description>wepingo-convertor-api</description>
 
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/context.xml
-					 /WEB-INF/loading-properties.xml</param-value>
+		<param-value>/WEB-INF/wepingo-convertor-context.xml</param-value>
 	</context-param>
 
 	<listener>
@@ -28,27 +27,5 @@
 		<servlet-name>CXFServlet</servlet-name>
 		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
-
-	<!-- security 
-	<filter>
-        <filter-name>springSecurityFilterChain</filter-name>
-        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
-    </filter>
- 
-    <filter-mapping>
-        <filter-name>springSecurityFilterChain</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
-	<security-constraint>
-        <web-resource-collection>
-            <web-resource-name>restricted web services</web-resource-name>
-            <url-pattern>/*</url-pattern>
-            <http-method>GET</http-method>
-            <http-method>POST</http-method>
-        </web-resource-collection>
-        <user-data-constraint>
-            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
-        </user-data-constraint>
-    </security-constraint> -->
 
 </web-app>

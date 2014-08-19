@@ -1,26 +1,28 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.wepingo.convertor</groupId>
-  <artifactId>wepingo-convertor</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  
-  <modules>
-  	<module>wepingo-convertor-widget</module>
-  	<module>wepingo-convertor-api</module>
-  	<module>wepingo-convertor-common</module>
-  	<module>wepingo-convertor-dao</module>
-  	<module>wepingo-convertor-engine</module>
-  	<module>wepingo-convertor-service</module>
-  	<module>wepingo-convertor-util</module>
-  </modules>
-  
-  	<properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.wepingo.convertor</groupId>
+	<artifactId>wepingo-convertor</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>wepingo-convertor-widget</module>
+		<module>wepingo-convertor-api</module>
+		<module>wepingo-convertor-common</module>
+		<module>wepingo-convertor-dao</module>
+		<module>wepingo-convertor-engine</module>
+		<module>wepingo-convertor-service</module>
+		<module>wepingo-convertor-util</module>
+	</modules>
+
+	<properties>
 		<java.version>1.7</java.version>
 		<hibernate.version>4.2.7.Final</hibernate.version>
+		<spring.version>4.0.6.RELEASE</spring.version>
 	</properties>
-  
-  	<pluginRepositories>
+
+	<pluginRepositories>
 		<pluginRepository>
 			<id>unto.net</id>
 			<url>http://repo.maven.apache.org/maven2/</url>
@@ -72,8 +74,8 @@
 			</snapshots>
 		</repository>
 	</repositories>
-  
-  	<build>
+
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -87,4 +89,22 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+	</dependencies>
 </project>
